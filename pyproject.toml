@@ -1,0 +1,42 @@
+[project]
+name = "window-tello-refactor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Manny_DL", email = "manifarahy@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "djitellopy>=2.5.0",
+    "keyboard>=0.13.5",
+    "numpy>=2.5.4",
+    "opencv-python>=5.0.0.93",
+    "pytest>=9.1.1",
+    "torch>=2.14.1",
+    "torchvision>=0.29.1",
+    "ultralytics>=8.4.190",
+]
+
+[project.scripts]
+window-tello-refactor = "window_tello_refactor:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.1",
+]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu" }]
+torchvision = [{ index = "pytorch-cpu" }]

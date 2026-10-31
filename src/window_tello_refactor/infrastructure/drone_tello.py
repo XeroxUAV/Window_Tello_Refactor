@@ -5,7 +5,7 @@ import time
 
 from djitellopy import Tello
 
-from domain.ports import DronePort
+from src.window_tello_refactor.infrastructure.ports import DronePort
 
 
 class TelloDrone(DronePort):

@@ -4,8 +4,8 @@ import cv2
 import numpy as np
 from ultralytics import YOLO
 
-from domain.entities import EMPTY_DETECTION, Detection
-from domain.geometry import extract_quad_from_mask
+from src.window_tello_refactor.domain.entities import EMPTY_DETECTION, Detection
+from src.window_tello_refactor.domain.geometry import extract_quad_from_mask
 
 
 class YoloDetector:

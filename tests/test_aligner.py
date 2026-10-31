@@ -3,7 +3,7 @@
 import numpy as np
 
 from src.window_tello_refactor.application.aligner import Aligner
-from src.window_tello_refactor.application.params import (
+from window_tello_refactor.domain.params import (
     AlignerParams, ApproachParams, MinSpeeds, PassParams, PIDParams,
     SearchParams,
 )

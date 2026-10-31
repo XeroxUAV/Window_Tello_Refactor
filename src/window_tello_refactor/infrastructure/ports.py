@@ -10,7 +10,7 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import Any, AsyncContextManager, Protocol
 
-from domain.entities import Detection
+from src.window_tello_refactor.domain.entities import Detection
 
 
 class DetectorPort(Protocol):

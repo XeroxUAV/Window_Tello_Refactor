@@ -9,13 +9,13 @@ from concurrent.futures import ThreadPoolExecutor
 import cv2
 import torch
 
-from application.aligner import Aligner
-from application.params import params_from_config
-from config.config import AppConfig
-from domain.ports import DetectorPort, DronePort, HUDWriterPort
-from infrastructure.detector_yolo import YoloDetector
-from infrastructure.drone_tello import TelloDrone
-from presentation.hud import HUD
+from src.window_tello_refactor.application.aligner import Aligner
+from src.window_tello_refactor.domain.params import params_from_config
+from src.window_tello_refactor.domain.config import AppConfig
+from src.window_tello_refactor.infrastructure.ports import DetectorPort, DronePort, HUDWriterPort
+from src.window_tello_refactor.infrastructure.detector_yolo import YoloDetector
+from src.window_tello_refactor.infrastructure.drone_tello import TelloDrone
+from src.window_tello_refactor.infrastructure.hud import HUD
 
 
 class WindowPassApp:

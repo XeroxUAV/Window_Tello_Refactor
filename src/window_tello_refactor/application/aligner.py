@@ -8,15 +8,15 @@ import time
 
 import numpy as np
 
-from application.params import AlignerParams
-from domain.entities import AlignCommand
-from domain.geometry import (
+from src.window_tello_refactor.domain.params import AlignerParams
+from src.window_tello_refactor.domain.entities import AlignCommand
+from src.window_tello_refactor.domain.geometry import (
     geometric_yaw_error,
     roll_error_from_corners,
     throttle_error_from_center,
     yaw_error_from_center,
 )
-from domain.pid import PID
+from src.window_tello_refactor.domain.pid import PID
 
 
 class Aligner:
